@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gathering-army.css">
+    <script src="https://kit.fontawesome.com/e6fd05d4d4.js" crossorigin="anonymous"></script>
+    <script type="module" src="scripts/gathering-army.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gathering Army</title>
+    <link rel="icon" type="image/x-icon" href="images/gold-coin.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>ArmiesOfZondor</h2>
+            <div>
+                <a href="gathering-army.html">Home</a>
+                <a href="getting-resources.html">Get resources</a>
+                <a href="your-army.html">Your army</a>
+                <button id="restart-game-btn"> <i class="fa-solid fa-power-off"></i> Restart Game</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="resources">
+            <p>
+                <img class="resources__coin resources__image" src="images/gold-coin.png" alt="Coin image">
+                <span id="resources__coin-count"></span>
+            </p>
+            <p>
+                <img class="resources__metal resources__image" src="images/metal.png" alt="Metal image">
+                <span id="resources__metal-count"></span>
+            </p>
+            <p>
+                <img class="resources__wood resources__image" src="images/wood.png" alt="Wood image">
+                <span id="resources__wood-count"></span>
+            </p>
+        </section>
+
+        <h1>Warriors</h1>
+        <section id="warrior-output" class="grid"></section>
+
+        <h1>Animals</h1>
+        <section id="animal-output" class="grid"></section>
+
+        <h1>Weapons</h1>
+        <section id="weapon-output" class="grid"></section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/your-army.css">
+    <script src="https://kit.fontawesome.com/e6fd05d4d4.js" crossorigin="anonymous"></script>
+    <script type="module" src="scripts/your-army.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Army</title>
+    <link rel="icon" type="image/x-icon" href="images/gold-coin.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>ArmiesOfZondor</h2>
+            <div>
+                <a href="gathering-army.html">Home</a>
+                <a href="getting-resources.html">Get resources</a>
+                <a href="your-army.html">Your army</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="resources">
+            <p>
+                <img class="resources__coin resources__image" src="images/gold-coin.png" alt="Coin image">
+                <span id="resources__coin-count"></span>
+            </p>
+            <p>
+                <img class="resources__metal resources__image" src="images/metal.png" alt="Metal image">
+                <span id="resources__metal-count"></span>
+            </p>
+            <p>
+                <img class="resources__wood resources__image" src="images/wood.png" alt="Wood image">
+                <span id="resources__wood-count"></span>
+            </p>
+        </section>
+
+        <h1>Your Army</h1>
+
+        <label for="warrior-input">Find your warriors</label>
+        <input type="text" id="warrior-input">
+        <button id="btn-search-warrior" class="btn-search"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+
+        <h3>Warriors</h3>
+        <p id="no-warrior-search-output" class="no-search-output"></p>
+        <section id="warrior-output" class="grid"></section>
+        
+        <br>
+
+        <label for="weapon-and-animal-input">Find your machines and animals</label>
+        <input type="text" id="weapon-and-animal-input">
+        <button id="btn-search-weapon-and-animal" class="btn-search"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+
+        <h3>War machines and animals</h3>
+        <p id="no-weapon-animal-search-output" class="no-search-output"></p>
+        <section id="weapon-and-animal-output" class="grid"></section>
+        
+    </main>
+</body>
+</html>

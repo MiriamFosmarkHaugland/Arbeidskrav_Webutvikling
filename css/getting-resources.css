@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+}
+
+.grid__image {
+    width: 100%;
+    border-radius: 150px;
+}
+
+.grid__image-mines {
+    cursor: url('../images/pickaxe-cursor.png'), pointer;
+}
+
+.grid__image-woods {
+    cursor: url('../images/axe-cursor.png'), pointer;
+}
